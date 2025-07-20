@@ -11,13 +11,20 @@
     <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
 
     <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
+      <div class="container">
+        <form action="" class="searchForm">
+          <input type="text" placeholder="Search images..." class="search-input">
+          <button type="submit" class="searchBtn">Search</button>
+        </form>
+      </div>
+      <div class="container">
+         <div class="loader-overlay" id="loaderOverlay"></div>
+        <div id="loader" class="loader loader-hidden"></div>
+        <ul class="gallery" id="g"></ul>
+      </div>
     </main>
 
     <load src="./partials/footer.html" />
-
-    <script type="module" src="./main.js"></script>
+    <script type="module" src="js/app.js"></script>
   </body>
 </html>
